@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Registration</div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="abcd@mail.com" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Tel.</span>
+            <input type="tel" placeholder="+491755583342" required />
+          </div>
+        </div>
+        <div>
+          <div class="gender-details">
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <input
+                type="radio"
+                name="gender"
+                value="male"
+                id="male"
+                onclick="toggleGender('male')"
+              />
+              <label for="male"
+                ><img
+                  src="img/stand-man.png"
+                  alt="standing"
+                  class="img-stand"
+                  id="maleStand" />
+                <img
+                  src="img/wave-man.png"
+                  alt="waving"
+                  class="img-wave"
+                  id="maleWave"
+              /></label>
+              <input
+                type="radio"
+                name="gender"
+                value="female"
+                id="female"
+                onclick="toggleGender('female')"
+              />
+              <label for="female">
+                <img
+                  src="img/stand-woman.png"
+                  alt="standing"
+                  class="img-stand"
+                  id="femaleStand"
+                />
+                <img
+                  src="img/wave-woman.png"
+                  alt="waving"
+                  id="femaleWave"
+                  class="img-wave"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
